@@ -22,11 +22,11 @@ Update: Upgraded to Java 11 and Graph QL to 5+ version dependency
 - Usage for `book`
 ```
   {
-   book(id: "123") {
-     title
-     authors
-     publisher
-   }
+    book(id: "123") {
+      title
+      authors
+      publisher
+    }
 ```
 - Combination of both `allBooks` and `book`
 ```
