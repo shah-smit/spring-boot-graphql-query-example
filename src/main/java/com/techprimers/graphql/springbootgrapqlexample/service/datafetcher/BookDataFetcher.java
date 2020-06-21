@@ -2,6 +2,7 @@ package com.techprimers.graphql.springbootgrapqlexample.service.datafetcher;
 
 import com.techprimers.graphql.springbootgrapqlexample.model.Book;
 import com.techprimers.graphql.springbootgrapqlexample.repository.BookRepository;
+import com.techprimers.graphql.springbootgrapqlexample.service.BookService;
 import com.techprimers.graphql.springbootgrapqlexample.service.CacheService;
 import graphql.schema.DataFetcher;
 import graphql.schema.DataFetchingEnvironment;
@@ -12,20 +13,15 @@ import org.springframework.stereotype.Component;
 import java.util.concurrent.ExecutionException;
 
 @Component
-public class BookDataFetcher implements DataFetcher<Book>{
+public class BookDataFetcher implements DataFetcher<Book> {
 
     @Autowired
-    CacheService cacheService;
+    BookService bookService;
 
     @Override
     public Book get(DataFetchingEnvironment dataFetchingEnvironment) {
 
         String isn = dataFetchingEnvironment.getArgument("id");
-
-        try {
-            return cacheService.getByIsn(isn);
-        } catch (ExecutionException e) {
-            return null;
-        }
+        return bookService.getBookByIsn(isn);
     }
 }

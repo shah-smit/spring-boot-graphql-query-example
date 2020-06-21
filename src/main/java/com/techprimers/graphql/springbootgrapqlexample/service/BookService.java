@@ -24,7 +24,6 @@ public class BookService {
         return bookRepository.findById(isn).get();
     }
 
-
     public void saveBook(Book book){
         bookRepository.save(book);
     }
@@ -35,7 +34,7 @@ public class BookService {
     }
 
     @CacheEvict(value = {"books","byISN"}, allEntries = true)
-    @Scheduled(cron = "0/1 * * * *")
+    @Scheduled(cron = "0 0 0 ? * *")
     public void deleteCacheEntries(){
         log.info(">>> Deleting Cache @ {}", LocalDateTime.now());
     }

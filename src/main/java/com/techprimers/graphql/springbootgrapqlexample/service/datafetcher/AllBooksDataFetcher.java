@@ -2,10 +2,13 @@ package com.techprimers.graphql.springbootgrapqlexample.service.datafetcher;
 
 import com.techprimers.graphql.springbootgrapqlexample.model.Book;
 import com.techprimers.graphql.springbootgrapqlexample.repository.BookRepository;
+import com.techprimers.graphql.springbootgrapqlexample.service.BookService;
 import com.techprimers.graphql.springbootgrapqlexample.service.CacheService;
 import graphql.schema.DataFetcher;
 import graphql.schema.DataFetchingEnvironment;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.cache.CacheManager;
 import org.springframework.cache.annotation.CacheEvict;
 import org.springframework.cache.annotation.Cacheable;
 import org.springframework.scheduling.annotation.Scheduled;
@@ -15,18 +18,15 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.ExecutionException;
 
+@Slf4j
 @Component
-public class AllBooksDataFetcher implements DataFetcher<List<Book>>{
+public class AllBooksDataFetcher implements DataFetcher<List<Book>> {
 
     @Autowired
-    CacheService cacheService;
+    BookService bookService;
 
     @Override
     public List<Book> get(DataFetchingEnvironment dataFetchingEnvironment) {
-        try {
-            return cacheService.getAllBooks();
-        } catch (ExecutionException e) {
-            return new ArrayList<>();
-        }
+        return bookService.getAllBooks();
     }
 }
