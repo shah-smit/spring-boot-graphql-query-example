@@ -83,7 +83,8 @@ public class GraphQLService {
         return RuntimeWiring.newRuntimeWiring()
                 .type("Query", typeWiring -> typeWiring
                         .dataFetcher("allBooks", allBooksDataFetcher)
-                        .dataFetcher("book", bookDataFetcher))
+                        .dataFetcher("book", bookDataFetcher)
+                        .dataFetcher("orderedBooks", allBooksDataFetcher))
                 .type("Mutation", typeWiring -> typeWiring
                         .dataFetcher("newBook", addBookFetcher))
                 .build();

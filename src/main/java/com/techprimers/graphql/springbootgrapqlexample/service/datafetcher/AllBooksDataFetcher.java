@@ -12,8 +12,10 @@ import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Component;
 
 import java.util.ArrayList;
+import java.util.Comparator;
 import java.util.List;
 import java.util.concurrent.ExecutionException;
+import java.util.stream.Collectors;
 
 @Component
 public class AllBooksDataFetcher implements DataFetcher<List<Book>>{
@@ -23,8 +25,15 @@ public class AllBooksDataFetcher implements DataFetcher<List<Book>>{
 
     @Override
     public List<Book> get(DataFetchingEnvironment dataFetchingEnvironment) {
+        String orderBy = dataFetchingEnvironment.getArgument("orderBy");
         try {
-            return cacheService.getAllBooks();
+            if(orderBy != null && orderBy.equalsIgnoreCase("title")){
+                return cacheService.getAllBooks().stream()
+                        .sorted((b1,b2) -> b1.getTitle().compareToIgnoreCase(b2.getTitle()))
+                        .collect(Collectors.toList());
+            } else {
+                return cacheService.getAllBooks();
+            }
         } catch (ExecutionException e) {
             return new ArrayList<>();
         }

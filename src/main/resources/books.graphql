@@ -1,5 +1,6 @@
 type Query {
  allBooks: [Book]
+ orderedBooks(orderBy: String): [Book]
  book(id: String): Book
 }
 

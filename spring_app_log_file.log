@@ -1,0 +1,491 @@
+2020-07-08 02:26:57.083  INFO 14579 --- [main] c.c.c.ConfigServicePropertySourceLocator : Fetching config from server at : http://localhost:8888
+2020-07-08 02:26:57.239  INFO 14579 --- [main] c.c.c.ConfigServicePropertySourceLocator : Connect Timeout Exception on Url - http://localhost:8888. Will be trying the next url if available
+2020-07-08 02:26:57.239  WARN 14579 --- [main] c.c.c.ConfigServicePropertySourceLocator : Could not locate PropertySource: I/O error on GET request for "http://localhost:8888/graphql-example/default": Connection refused; nested exception is java.net.ConnectException: Connection refused
+2020-07-08 02:26:57.243  INFO 14579 --- [main] t.g.s.SpringBootGrapqlExampleApplication : No active profile set, falling back to default profiles: default
+2020-07-08 02:26:58.173  INFO 14579 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-07-08 02:26:58.302  INFO 14579 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 114ms. Found 1 JPA repository interfaces.
+2020-07-08 02:26:58.477  INFO 14579 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=bde9506b-3c5d-3a87-a607-5a1cd0294259
+2020-07-08 02:26:58.910  INFO 14579 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-07-08 02:26:59.237  INFO 14579 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8091 (http)
+2020-07-08 02:26:59.254  INFO 14579 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-07-08 02:26:59.254  INFO 14579 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.35]
+2020-07-08 02:26:59.384  INFO 14579 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-07-08 02:26:59.384  INFO 14579 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2124 ms
+2020-07-08 02:26:59.806  INFO 14579 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-07-08 02:26:59.877  INFO 14579 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-07-08 02:26:59.881  WARN 14579 --- [main] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=org.hsqldb.jdbcDriver was not found, trying direct instantiation.
+2020-07-08 02:27:00.214  INFO 14579 --- [main] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Driver does not support get/set network timeout for connections. (feature not supported)
+2020-07-08 02:27:00.218  INFO 14579 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-07-08 02:27:00.295  INFO 14579 --- [task-1] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-07-08 02:27:00.326  WARN 14579 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-07-08 02:27:00.406  INFO 14579 --- [task-1] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.15.Final
+2020-07-08 02:27:00.619  INFO 14579 --- [task-1] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-07-08 02:27:00.793  INFO 14579 --- [task-1] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.HSQLDialect
+2020-07-08 02:27:01.593  INFO 14579 --- [task-1] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-07-08 02:27:01.602  INFO 14579 --- [task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-07-08 02:27:01.928  INFO 14579 --- [main] c.t.g.s.aop.LoggingAdvice                : Method Invoked save in class class com.sun.proxy.$Proxy127 with args [com.techprimers.graphql.springbootgrapqlexample.model.Book@34a20f16]
+2020-07-08 02:27:02.018  INFO 14579 --- [main] c.t.g.s.aop.LoggingAdvice                : Method save return com.techprimers.graphql.springbootgrapqlexample.model.Book@36c07c75
+2020-07-08 02:27:02.018  INFO 14579 --- [main] c.t.g.s.aop.LoggingAdvice                : Method Invoked save in class class com.sun.proxy.$Proxy127 with args [com.techprimers.graphql.springbootgrapqlexample.model.Book@70b48eb3]
+2020-07-08 02:27:02.020  INFO 14579 --- [main] c.t.g.s.aop.LoggingAdvice                : Method save return com.techprimers.graphql.springbootgrapqlexample.model.Book@231df705
+2020-07-08 02:27:02.020  INFO 14579 --- [main] c.t.g.s.aop.LoggingAdvice                : Method Invoked save in class class com.sun.proxy.$Proxy127 with args [com.techprimers.graphql.springbootgrapqlexample.model.Book@74a820bf]
+2020-07-08 02:27:02.022  INFO 14579 --- [main] c.t.g.s.aop.LoggingAdvice                : Method save return com.techprimers.graphql.springbootgrapqlexample.model.Book@111cba40
+2020-07-08 02:27:02.749  INFO 14579 --- [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: c2454d06-7409-420c-9cb7-e01298781f7e
+
+2020-07-08 02:27:02.860  INFO 14579 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@61e14b53, org.springframework.security.web.context.SecurityContextPersistenceFilter@6068ebb2, org.springframework.security.web.header.HeaderWriterFilter@56f9de3b, org.springframework.security.web.authentication.logout.LogoutFilter@2299d903, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1ed9d173, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1760e594, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@31b6b0c7, org.springframework.security.web.session.SessionManagementFilter@1aeff8ca, org.springframework.security.web.access.ExceptionTranslationFilter@4ae49387, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@50b4364]
+2020-07-08 02:27:02.939  INFO 14579 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2020-07-08 02:27:02.999  INFO 14579 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8091 (http) with context path ''
+2020-07-08 02:27:03.002  INFO 14579 --- [main] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
+2020-07-08 02:27:03.003  INFO 14579 --- [main] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+2020-07-08 02:27:03.016  INFO 14579 --- [main] t.g.s.SpringBootGrapqlExampleApplication : Started SpringBootGrapqlExampleApplication in 7.551 seconds (JVM running for 8.078)
+2020-07-08 02:28:35.328  INFO 14579 --- [http-nio-8091-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-07-08 02:28:35.329  INFO 14579 --- [http-nio-8091-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-07-08 02:28:35.347  INFO 14579 --- [http-nio-8091-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 17 ms
+2020-07-08 02:28:35.399  INFO 14579 --- [http-nio-8091-exec-2] c.t.g.s.aop.LoggingAdvice                : Method Invoked getAllBooks in class class com.techprimers.graphql.springbootgrapqlexample.resource.BookResource with args [{
+   allBooks {
+     isn
+     title
+     authors
+     publisher
+     publishedDate
+   }
+   book(id: "123") {
+     title
+     authors
+     publisher
+   }
+}]
+2020-07-08 02:28:35.403  INFO 14579 --- [http-nio-8091-exec-2] c.t.g.s.aop.LoggingAdvice                : Method Invoked getGraphQL in class class com.techprimers.graphql.springbootgrapqlexample.service.GraphQLService with args []
+2020-07-08 02:28:35.407  INFO 14579 --- [http-nio-8091-exec-2] c.t.g.s.aop.LoggingAdvice                : Method getGraphQL return graphql.GraphQL@575fe53f
+2020-07-08 02:28:35.445  INFO 14579 --- [http-nio-8091-exec-2] c.t.g.s.aop.LoggingAdvice                : Method Invoked getAllBooks in class class com.techprimers.graphql.springbootgrapqlexample.service.CacheService with args []
+2020-07-08 02:28:35.449  INFO 14579 --- [http-nio-8091-exec-2] c.t.g.s.service.CacheService             : >> all >> cache stats CacheStats{hitCount=0, missCount=0, loadSuccessCount=0, loadExceptionCount=0, totalLoadTime=0, evictionCount=0}
+2020-07-08 02:28:35.632  INFO 14579 --- [http-nio-8091-exec-2] c.t.g.s.aop.LoggingAdvice                : Method getAllBooks return [com.techprimers.graphql.springbootgrapqlexample.model.Book@39043ed0, com.techprimers.graphql.springbootgrapqlexample.model.Book@8006916, com.techprimers.graphql.springbootgrapqlexample.model.Book@10ea3478]
+2020-07-08 02:28:35.646  INFO 14579 --- [http-nio-8091-exec-2] c.t.g.s.aop.LoggingAdvice                : Method Invoked getByIsn in class class com.techprimers.graphql.springbootgrapqlexample.service.CacheService with args [123]
+2020-07-08 02:28:35.646  INFO 14579 --- [http-nio-8091-exec-2] c.t.g.s.service.CacheService             : >> id 123 >> cache stats CacheStats{hitCount=0, missCount=1, loadSuccessCount=1, loadExceptionCount=0, totalLoadTime=169764095, evictionCount=0}
+2020-07-08 02:28:35.648  INFO 14579 --- [http-nio-8091-exec-2] c.t.g.s.aop.LoggingAdvice                : Method getByIsn return com.techprimers.graphql.springbootgrapqlexample.model.Book@39043ed0
+2020-07-08 02:28:35.651  INFO 14579 --- [http-nio-8091-exec-2] c.t.g.s.aop.LoggingAdvice                : Method getAllBooks return <200 OK OK,ExecutionResultImpl{data={allBooks=[{isn=123, title=Book of Clouds, authors=[Chloe Aridjis], publisher=Kindle Edition, publishedDate=Nov 2017}, {isn=124, title=Cloud Arch & Engineering, authors=[Peter, Sam], publisher=Orielly, publishedDate=Jan 2015}, {isn=125, title=Java 9 Programming, authors=[Venkat, Ram], publisher=Orielly, publishedDate=Dec 2016}], book={title=Book of Clouds, authors=[Chloe Aridjis], publisher=Kindle Edition}}, errors=[], dataPresent=true, extensions=null},[]>
+2020-07-08 02:29:01.365  INFO 14579 --- [http-nio-8091-exec-3] c.t.g.s.aop.LoggingAdvice                : Method Invoked getAllBooks in class class com.techprimers.graphql.springbootgrapqlexample.resource.BookResource with args [{
+   allBooks (orderBy: { title: asc }) {
+     isn
+     title
+     authors
+     publisher
+     publishedDate
+   }
+   book(id: "123") {
+     title
+     authors
+     publisher
+   }
+}]
+2020-07-08 02:29:01.365  INFO 14579 --- [http-nio-8091-exec-3] c.t.g.s.aop.LoggingAdvice                : Method Invoked getGraphQL in class class com.techprimers.graphql.springbootgrapqlexample.service.GraphQLService with args []
+2020-07-08 02:29:01.367  INFO 14579 --- [http-nio-8091-exec-3] c.t.g.s.aop.LoggingAdvice                : Method getGraphQL return graphql.GraphQL@575fe53f
+2020-07-08 02:29:01.374  WARN 14579 --- [http-nio-8091-exec-3] graphql.GraphQL                          : Query failed to validate : '{
+   allBooks (orderBy: { title: asc }) {
+     isn
+     title
+     authors
+     publisher
+     publishedDate
+   }
+   book(id: "123") {
+     title
+     authors
+     publisher
+   }
+}'
+2020-07-08 02:29:01.374  INFO 14579 --- [http-nio-8091-exec-3] c.t.g.s.aop.LoggingAdvice                : Method getAllBooks return <200 OK OK,ExecutionResultImpl{data=null, errors=[ValidationError{validationErrorType=UnknownArgument, queryPath=[allBooks], message=Validation error of type UnknownArgument: Unknown field argument orderBy @ 'allBooks', locations=[SourceLocation{line=2, column=14}], description='Unknown field argument orderBy'}], dataPresent=false, extensions=null},[]>
+2020-07-08 02:31:08.633  INFO 14579 --- [http-nio-8091-exec-6] c.t.g.s.aop.LoggingAdvice                : Method Invoked getAllBooks in class class com.techprimers.graphql.springbootgrapqlexample.resource.BookResource with args [{"query":"{\n   allBooks (orderBy: { field: title, direction: ASC }) {\n     isn\n     title\n     authors\n     publisher\n     publishedDate\n   }\n}"}]
+2020-07-08 02:31:08.634  INFO 14579 --- [http-nio-8091-exec-6] c.t.g.s.aop.LoggingAdvice                : Method Invoked getGraphQL in class class com.techprimers.graphql.springbootgrapqlexample.service.GraphQLService with args []
+2020-07-08 02:31:08.634  INFO 14579 --- [http-nio-8091-exec-6] c.t.g.s.aop.LoggingAdvice                : Method getGraphQL return graphql.GraphQL@575fe53f
+2020-07-08 02:31:08.637  WARN 14579 --- [http-nio-8091-exec-6] graphql.GraphQL                          : Query failed to parse : '{"query":"{\n   allBooks (orderBy: { field: title, direction: ASC }) {\n     isn\n     title\n     authors\n     publisher\n     publishedDate\n   }\n}"}'
+2020-07-08 02:31:08.638  INFO 14579 --- [http-nio-8091-exec-6] c.t.g.s.aop.LoggingAdvice                : Method getAllBooks return <200 OK OK,ExecutionResultImpl{data=null, errors=[InvalidSyntaxError{ message=Invalid Syntax ,locations=[SourceLocation{line=1, column=1}]}], dataPresent=false, extensions=null},[]>
+2020-07-08 02:31:17.746  INFO 14579 --- [http-nio-8091-exec-7] c.t.g.s.aop.LoggingAdvice                : Method Invoked getAllBooks in class class com.techprimers.graphql.springbootgrapqlexample.resource.BookResource with args [{
+   allBooks (orderBy: { field: title, direction: ASC }) {
+     isn
+     title
+     authors
+     publisher
+     publishedDate
+   }
+}]
+2020-07-08 02:31:17.747  INFO 14579 --- [http-nio-8091-exec-7] c.t.g.s.aop.LoggingAdvice                : Method Invoked getGraphQL in class class com.techprimers.graphql.springbootgrapqlexample.service.GraphQLService with args []
+2020-07-08 02:31:17.747  INFO 14579 --- [http-nio-8091-exec-7] c.t.g.s.aop.LoggingAdvice                : Method getGraphQL return graphql.GraphQL@575fe53f
+2020-07-08 02:31:17.750  WARN 14579 --- [http-nio-8091-exec-7] graphql.GraphQL                          : Query failed to validate : '{
+   allBooks (orderBy: { field: title, direction: ASC }) {
+     isn
+     title
+     authors
+     publisher
+     publishedDate
+   }
+}'
+2020-07-08 02:31:17.750  INFO 14579 --- [http-nio-8091-exec-7] c.t.g.s.aop.LoggingAdvice                : Method getAllBooks return <200 OK OK,ExecutionResultImpl{data=null, errors=[ValidationError{validationErrorType=UnknownArgument, queryPath=[allBooks], message=Validation error of type UnknownArgument: Unknown field argument orderBy @ 'allBooks', locations=[SourceLocation{line=2, column=14}], description='Unknown field argument orderBy'}], dataPresent=false, extensions=null},[]>
+2020-07-08 02:33:57.298  INFO 14579 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-07-08 02:33:57.299  INFO 14579 --- [SpringContextShutdownHook] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2020-07-08 02:33:57.302  INFO 14579 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-07-08 02:33:57.304  INFO 14579 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2020-07-08 02:33:57.308  INFO 14579 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2020-07-08 02:34:03.073  INFO 14720 --- [main] c.c.c.ConfigServicePropertySourceLocator : Fetching config from server at : http://localhost:8888
+2020-07-08 02:34:03.180  INFO 14720 --- [main] c.c.c.ConfigServicePropertySourceLocator : Connect Timeout Exception on Url - http://localhost:8888. Will be trying the next url if available
+2020-07-08 02:34:03.181  WARN 14720 --- [main] c.c.c.ConfigServicePropertySourceLocator : Could not locate PropertySource: I/O error on GET request for "http://localhost:8888/graphql-example/default": Connection refused; nested exception is java.net.ConnectException: Connection refused
+2020-07-08 02:34:03.185  INFO 14720 --- [main] t.g.s.SpringBootGrapqlExampleApplication : No active profile set, falling back to default profiles: default
+2020-07-08 02:34:04.045  INFO 14720 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-07-08 02:34:04.158  INFO 14720 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 103ms. Found 1 JPA repository interfaces.
+2020-07-08 02:34:04.365  INFO 14720 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=bde9506b-3c5d-3a87-a607-5a1cd0294259
+2020-07-08 02:34:04.689  INFO 14720 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-07-08 02:34:04.976  INFO 14720 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8091 (http)
+2020-07-08 02:34:04.989  INFO 14720 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-07-08 02:34:04.989  INFO 14720 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.35]
+2020-07-08 02:34:05.103  INFO 14720 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-07-08 02:34:05.104  INFO 14720 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1903 ms
+2020-07-08 02:34:05.518  INFO 14720 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-07-08 02:34:05.588  INFO 14720 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-07-08 02:34:05.592  WARN 14720 --- [main] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=org.hsqldb.jdbcDriver was not found, trying direct instantiation.
+2020-07-08 02:34:05.896  INFO 14720 --- [main] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Driver does not support get/set network timeout for connections. (feature not supported)
+2020-07-08 02:34:05.899  INFO 14720 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-07-08 02:34:05.995  INFO 14720 --- [task-1] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-07-08 02:34:06.033  WARN 14720 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-07-08 02:34:06.068  INFO 14720 --- [task-1] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.15.Final
+2020-07-08 02:34:06.256  INFO 14720 --- [task-1] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-07-08 02:34:06.430  INFO 14720 --- [task-1] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.HSQLDialect
+2020-07-08 02:34:07.204  INFO 14720 --- [task-1] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-07-08 02:34:07.212  INFO 14720 --- [task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-07-08 02:34:07.463  INFO 14720 --- [main] c.t.g.s.aop.LoggingAdvice                : Method Invoked save in class class com.sun.proxy.$Proxy127 with args [com.techprimers.graphql.springbootgrapqlexample.model.Book@2c9d90fc]
+2020-07-08 02:34:07.543  INFO 14720 --- [main] c.t.g.s.aop.LoggingAdvice                : Method save return com.techprimers.graphql.springbootgrapqlexample.model.Book@41aebbb4
+2020-07-08 02:34:07.543  INFO 14720 --- [main] c.t.g.s.aop.LoggingAdvice                : Method Invoked save in class class com.sun.proxy.$Proxy127 with args [com.techprimers.graphql.springbootgrapqlexample.model.Book@7d37ee0c]
+2020-07-08 02:34:07.547  INFO 14720 --- [main] c.t.g.s.aop.LoggingAdvice                : Method save return com.techprimers.graphql.springbootgrapqlexample.model.Book@353c6da1
+2020-07-08 02:34:07.547  INFO 14720 --- [main] c.t.g.s.aop.LoggingAdvice                : Method Invoked save in class class com.sun.proxy.$Proxy127 with args [com.techprimers.graphql.springbootgrapqlexample.model.Book@3a3f96ab]
+2020-07-08 02:34:07.550  INFO 14720 --- [main] c.t.g.s.aop.LoggingAdvice                : Method save return com.techprimers.graphql.springbootgrapqlexample.model.Book@21b51e59
+2020-07-08 02:34:08.294  INFO 14720 --- [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 50b5e557-59a1-414a-a9c2-7ed7e4465e73
+
+2020-07-08 02:34:08.400  INFO 14720 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@59127611, org.springframework.security.web.context.SecurityContextPersistenceFilter@763b0996, org.springframework.security.web.header.HeaderWriterFilter@6501b105, org.springframework.security.web.authentication.logout.LogoutFilter@29892a77, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@618f627b, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@70d5d96b, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@553ce348, org.springframework.security.web.session.SessionManagementFilter@5403431a, org.springframework.security.web.access.ExceptionTranslationFilter@504b8705, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@7ff09659]
+2020-07-08 02:34:08.492  INFO 14720 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2020-07-08 02:34:08.560  INFO 14720 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8091 (http) with context path ''
+2020-07-08 02:34:08.566  INFO 14720 --- [main] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
+2020-07-08 02:34:08.566  INFO 14720 --- [main] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+2020-07-08 02:34:08.588  INFO 14720 --- [main] t.g.s.SpringBootGrapqlExampleApplication : Started SpringBootGrapqlExampleApplication in 6.87 seconds (JVM running for 7.349)
+2020-07-08 02:34:14.056  INFO 14720 --- [http-nio-8091-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-07-08 02:34:14.056  INFO 14720 --- [http-nio-8091-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-07-08 02:34:14.069  INFO 14720 --- [http-nio-8091-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 13 ms
+2020-07-08 02:34:14.136  INFO 14720 --- [http-nio-8091-exec-1] c.t.g.s.aop.LoggingAdvice                : Method Invoked getAllBooks in class class com.techprimers.graphql.springbootgrapqlexample.resource.BookResource with args [{
+   allBooks (orderBy: { field: title, direction: ASC }) {
+     isn
+     title
+     authors
+     publisher
+     publishedDate
+   }
+}]
+2020-07-08 02:34:14.141  INFO 14720 --- [http-nio-8091-exec-1] c.t.g.s.aop.LoggingAdvice                : Method Invoked getGraphQL in class class com.techprimers.graphql.springbootgrapqlexample.service.GraphQLService with args []
+2020-07-08 02:34:14.146  INFO 14720 --- [http-nio-8091-exec-1] c.t.g.s.aop.LoggingAdvice                : Method getGraphQL return graphql.GraphQL@deb7342
+2020-07-08 02:34:14.174  WARN 14720 --- [http-nio-8091-exec-1] graphql.GraphQL                          : Query failed to validate : '{
+   allBooks (orderBy: { field: title, direction: ASC }) {
+     isn
+     title
+     authors
+     publisher
+     publishedDate
+   }
+}'
+2020-07-08 02:34:14.176  INFO 14720 --- [http-nio-8091-exec-1] c.t.g.s.aop.LoggingAdvice                : Method getAllBooks return <200 OK OK,ExecutionResultImpl{data=null, errors=[ValidationError{validationErrorType=UnknownArgument, queryPath=[allBooks], message=Validation error of type UnknownArgument: Unknown field argument orderBy @ 'allBooks', locations=[SourceLocation{line=2, column=14}], description='Unknown field argument orderBy'}], dataPresent=false, extensions=null},[]>
+2020-07-08 02:34:27.680  INFO 14720 --- [http-nio-8091-exec-3] c.t.g.s.aop.LoggingAdvice                : Method Invoked getAllBooks in class class com.techprimers.graphql.springbootgrapqlexample.resource.BookResource with args [{
+   orderedBooks (orderBy: { field: title, direction: ASC }) {
+     isn
+     title
+     authors
+     publisher
+     publishedDate
+   }
+}]
+2020-07-08 02:34:27.680  INFO 14720 --- [http-nio-8091-exec-3] c.t.g.s.aop.LoggingAdvice                : Method Invoked getGraphQL in class class com.techprimers.graphql.springbootgrapqlexample.service.GraphQLService with args []
+2020-07-08 02:34:27.680  INFO 14720 --- [http-nio-8091-exec-3] c.t.g.s.aop.LoggingAdvice                : Method getGraphQL return graphql.GraphQL@deb7342
+2020-07-08 02:34:27.683  WARN 14720 --- [http-nio-8091-exec-3] graphql.GraphQL                          : Query failed to validate : '{
+   orderedBooks (orderBy: { field: title, direction: ASC }) {
+     isn
+     title
+     authors
+     publisher
+     publishedDate
+   }
+}'
+2020-07-08 02:34:27.684  INFO 14720 --- [http-nio-8091-exec-3] c.t.g.s.aop.LoggingAdvice                : Method getAllBooks return <200 OK OK,ExecutionResultImpl{data=null, errors=[ValidationError{validationErrorType=WrongType, queryPath=[orderedBooks], message=Validation error of type WrongType: argument 'orderBy' with value 'ObjectValue{objectFields=[ObjectField{name='field', value=EnumValue{name='title'}}, ObjectField{name='direction', value=EnumValue{name='ASC'}}]}' is not a valid 'String' @ 'orderedBooks', locations=[SourceLocation{line=2, column=18}], description='argument 'orderBy' with value 'ObjectValue{objectFields=[ObjectField{name='field', value=EnumValue{name='title'}}, ObjectField{name='direction', value=EnumValue{name='ASC'}}]}' is not a valid 'String''}], dataPresent=false, extensions=null},[]>
+2020-07-08 02:36:06.937  INFO 14720 --- [http-nio-8091-exec-5] c.t.g.s.aop.LoggingAdvice                : Method Invoked getAllBooks in class class com.techprimers.graphql.springbootgrapqlexample.resource.BookResource with args [{
+   orderedBooks {
+     isn
+     title
+     authors
+     publisher
+     publishedDate
+   }
+}]
+2020-07-08 02:36:06.938  INFO 14720 --- [http-nio-8091-exec-5] c.t.g.s.aop.LoggingAdvice                : Method Invoked getGraphQL in class class com.techprimers.graphql.springbootgrapqlexample.service.GraphQLService with args []
+2020-07-08 02:36:06.938  INFO 14720 --- [http-nio-8091-exec-5] c.t.g.s.aop.LoggingAdvice                : Method getGraphQL return graphql.GraphQL@deb7342
+2020-07-08 02:36:06.959  INFO 14720 --- [http-nio-8091-exec-5] c.t.g.s.aop.LoggingAdvice                : Method Invoked getAllBooks in class class com.techprimers.graphql.springbootgrapqlexample.service.CacheService with args []
+2020-07-08 02:36:06.964  INFO 14720 --- [http-nio-8091-exec-5] c.t.g.s.service.CacheService             : >> all >> cache stats CacheStats{hitCount=0, missCount=0, loadSuccessCount=0, loadExceptionCount=0, totalLoadTime=0, evictionCount=0}
+2020-07-08 02:36:07.125  INFO 14720 --- [http-nio-8091-exec-5] c.t.g.s.aop.LoggingAdvice                : Method getAllBooks return [com.techprimers.graphql.springbootgrapqlexample.model.Book@601f5a2f, com.techprimers.graphql.springbootgrapqlexample.model.Book@54226f72, com.techprimers.graphql.springbootgrapqlexample.model.Book@4e7699fb]
+2020-07-08 02:36:07.135  INFO 14720 --- [http-nio-8091-exec-5] c.t.g.s.aop.LoggingAdvice                : Method getAllBooks return <200 OK OK,ExecutionResultImpl{data={orderedBooks=[{isn=123, title=Book of Clouds, authors=[Chloe Aridjis], publisher=Kindle Edition, publishedDate=Nov 2017}, {isn=124, title=Cloud Arch & Engineering, authors=[Peter, Sam], publisher=Orielly, publishedDate=Jan 2015}, {isn=125, title=Java 9 Programming, authors=[Venkat, Ram], publisher=Orielly, publishedDate=Dec 2016}]}, errors=[], dataPresent=true, extensions=null},[]>
+2020-07-08 02:41:58.561  INFO 14720 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-07-08 02:41:58.562  INFO 14720 --- [SpringContextShutdownHook] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2020-07-08 02:41:58.565  INFO 14720 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-07-08 02:41:58.567  INFO 14720 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2020-07-08 02:41:58.570  INFO 14720 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2020-07-08 02:42:03.765  INFO 14854 --- [main] c.c.c.ConfigServicePropertySourceLocator : Fetching config from server at : http://localhost:8888
+2020-07-08 02:42:03.857  INFO 14854 --- [main] c.c.c.ConfigServicePropertySourceLocator : Connect Timeout Exception on Url - http://localhost:8888. Will be trying the next url if available
+2020-07-08 02:42:03.857  WARN 14854 --- [main] c.c.c.ConfigServicePropertySourceLocator : Could not locate PropertySource: I/O error on GET request for "http://localhost:8888/graphql-example/default": Connection refused; nested exception is java.net.ConnectException: Connection refused
+2020-07-08 02:42:03.861  INFO 14854 --- [main] t.g.s.SpringBootGrapqlExampleApplication : No active profile set, falling back to default profiles: default
+2020-07-08 02:42:04.592  INFO 14854 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-07-08 02:42:04.690  INFO 14854 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 90ms. Found 1 JPA repository interfaces.
+2020-07-08 02:42:04.864  INFO 14854 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=bde9506b-3c5d-3a87-a607-5a1cd0294259
+2020-07-08 02:42:05.145  INFO 14854 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-07-08 02:42:05.383  INFO 14854 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8091 (http)
+2020-07-08 02:42:05.392  INFO 14854 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-07-08 02:42:05.393  INFO 14854 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.35]
+2020-07-08 02:42:05.484  INFO 14854 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-07-08 02:42:05.484  INFO 14854 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1608 ms
+2020-07-08 02:42:05.838  INFO 14854 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-07-08 02:42:05.903  INFO 14854 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-07-08 02:42:05.907  WARN 14854 --- [main] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=org.hsqldb.jdbcDriver was not found, trying direct instantiation.
+2020-07-08 02:42:06.171  INFO 14854 --- [main] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Driver does not support get/set network timeout for connections. (feature not supported)
+2020-07-08 02:42:06.173  INFO 14854 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-07-08 02:42:06.236  INFO 14854 --- [task-1] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-07-08 02:42:06.265  WARN 14854 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-07-08 02:42:06.312  INFO 14854 --- [task-1] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.15.Final
+2020-07-08 02:42:06.456  INFO 14854 --- [task-1] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-07-08 02:42:06.571  INFO 14854 --- [task-1] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.HSQLDialect
+2020-07-08 02:42:07.228  INFO 14854 --- [task-1] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-07-08 02:42:07.235  INFO 14854 --- [task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-07-08 02:42:07.433  INFO 14854 --- [main] c.t.g.s.aop.LoggingAdvice                : Method Invoked save in class class com.sun.proxy.$Proxy127 with args [com.techprimers.graphql.springbootgrapqlexample.model.Book@51ac12ac]
+2020-07-08 02:42:07.511  INFO 14854 --- [main] c.t.g.s.aop.LoggingAdvice                : Method save return com.techprimers.graphql.springbootgrapqlexample.model.Book@6f50d55c
+2020-07-08 02:42:07.512  INFO 14854 --- [main] c.t.g.s.aop.LoggingAdvice                : Method Invoked save in class class com.sun.proxy.$Proxy127 with args [com.techprimers.graphql.springbootgrapqlexample.model.Book@3c18942]
+2020-07-08 02:42:07.514  INFO 14854 --- [main] c.t.g.s.aop.LoggingAdvice                : Method save return com.techprimers.graphql.springbootgrapqlexample.model.Book@2c48cede
+2020-07-08 02:42:07.514  INFO 14854 --- [main] c.t.g.s.aop.LoggingAdvice                : Method Invoked save in class class com.sun.proxy.$Proxy127 with args [com.techprimers.graphql.springbootgrapqlexample.model.Book@430df350]
+2020-07-08 02:42:07.517  INFO 14854 --- [main] c.t.g.s.aop.LoggingAdvice                : Method save return com.techprimers.graphql.springbootgrapqlexample.model.Book@451e2fa9
+2020-07-08 02:42:08.270  INFO 14854 --- [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: ed85824e-a6b2-4023-b78b-da34468dd3d1
+
+2020-07-08 02:42:08.373  INFO 14854 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@628962e5, org.springframework.security.web.context.SecurityContextPersistenceFilter@4269aad7, org.springframework.security.web.header.HeaderWriterFilter@258a8584, org.springframework.security.web.authentication.logout.LogoutFilter@498a4d62, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@71e7830a, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@621dc63d, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@410382cb, org.springframework.security.web.session.SessionManagementFilter@344f9467, org.springframework.security.web.access.ExceptionTranslationFilter@2b1a901d, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@2211b44f]
+2020-07-08 02:42:08.463  INFO 14854 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2020-07-08 02:42:08.526  INFO 14854 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8091 (http) with context path ''
+2020-07-08 02:42:08.536  INFO 14854 --- [main] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
+2020-07-08 02:42:08.537  INFO 14854 --- [main] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+2020-07-08 02:42:08.556  INFO 14854 --- [main] t.g.s.SpringBootGrapqlExampleApplication : Started SpringBootGrapqlExampleApplication in 5.987 seconds (JVM running for 6.373)
+2020-07-08 02:42:19.033  INFO 14854 --- [http-nio-8091-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-07-08 02:42:19.034  INFO 14854 --- [http-nio-8091-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-07-08 02:42:19.047  INFO 14854 --- [http-nio-8091-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 13 ms
+2020-07-08 02:42:19.106  INFO 14854 --- [http-nio-8091-exec-1] c.t.g.s.aop.LoggingAdvice                : Method Invoked getAllBooks in class class com.techprimers.graphql.springbootgrapqlexample.resource.BookResource with args [{
+   orderedBooks {
+     isn
+     title
+     authors
+     publisher
+     publishedDate
+   }
+}]
+2020-07-08 02:42:19.112  INFO 14854 --- [http-nio-8091-exec-1] c.t.g.s.aop.LoggingAdvice                : Method Invoked getGraphQL in class class com.techprimers.graphql.springbootgrapqlexample.service.GraphQLService with args []
+2020-07-08 02:42:19.116  INFO 14854 --- [http-nio-8091-exec-1] c.t.g.s.aop.LoggingAdvice                : Method getGraphQL return graphql.GraphQL@14506bcc
+2020-07-08 02:42:19.149  INFO 14854 --- [http-nio-8091-exec-1] c.t.g.s.aop.LoggingAdvice                : Method Invoked getAllBooks in class class com.techprimers.graphql.springbootgrapqlexample.service.CacheService with args []
+2020-07-08 02:42:19.152  INFO 14854 --- [http-nio-8091-exec-1] c.t.g.s.service.CacheService             : >> all >> cache stats CacheStats{hitCount=0, missCount=0, loadSuccessCount=0, loadExceptionCount=0, totalLoadTime=0, evictionCount=0}
+2020-07-08 02:42:19.320  INFO 14854 --- [http-nio-8091-exec-1] c.t.g.s.aop.LoggingAdvice                : Method getAllBooks return [com.techprimers.graphql.springbootgrapqlexample.model.Book@7f205a29, com.techprimers.graphql.springbootgrapqlexample.model.Book@55b893, com.techprimers.graphql.springbootgrapqlexample.model.Book@7dd94ba2]
+2020-07-08 02:42:19.336  INFO 14854 --- [http-nio-8091-exec-1] c.t.g.s.aop.LoggingAdvice                : Method getAllBooks return <200 OK OK,ExecutionResultImpl{data={orderedBooks=[{isn=123, title=Book of Clouds, authors=[Chloe Aridjis], publisher=Kindle Edition, publishedDate=Nov 2017}, {isn=124, title=Cloud Arch & Engineering, authors=[Peter, Sam], publisher=Orielly, publishedDate=Jan 2015}, {isn=125, title=Java 9 Programming, authors=[Venkat, Ram], publisher=Orielly, publishedDate=Dec 2016}]}, errors=[], dataPresent=true, extensions=null},[]>
+2020-07-08 02:42:35.070  INFO 14854 --- [http-nio-8091-exec-3] c.t.g.s.aop.LoggingAdvice                : Method Invoked getAllBooks in class class com.techprimers.graphql.springbootgrapqlexample.resource.BookResource with args [{
+   orderedBooks (orderBy: title) {
+     isn
+     title
+     authors
+     publisher
+     publishedDate
+   }
+}]
+2020-07-08 02:42:35.071  INFO 14854 --- [http-nio-8091-exec-3] c.t.g.s.aop.LoggingAdvice                : Method Invoked getGraphQL in class class com.techprimers.graphql.springbootgrapqlexample.service.GraphQLService with args []
+2020-07-08 02:42:35.071  INFO 14854 --- [http-nio-8091-exec-3] c.t.g.s.aop.LoggingAdvice                : Method getGraphQL return graphql.GraphQL@14506bcc
+2020-07-08 02:42:35.077  WARN 14854 --- [http-nio-8091-exec-3] graphql.GraphQL                          : Query failed to validate : '{
+   orderedBooks (orderBy: title) {
+     isn
+     title
+     authors
+     publisher
+     publishedDate
+   }
+}'
+2020-07-08 02:42:35.077  INFO 14854 --- [http-nio-8091-exec-3] c.t.g.s.aop.LoggingAdvice                : Method getAllBooks return <200 OK OK,ExecutionResultImpl{data=null, errors=[ValidationError{validationErrorType=WrongType, queryPath=[orderedBooks], message=Validation error of type WrongType: argument 'orderBy' with value 'EnumValue{name='title'}' is not a valid 'String' @ 'orderedBooks', locations=[SourceLocation{line=2, column=18}], description='argument 'orderBy' with value 'EnumValue{name='title'}' is not a valid 'String''}], dataPresent=false, extensions=null},[]>
+2020-07-08 02:44:09.837  INFO 14854 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-07-08 02:44:09.838  INFO 14854 --- [SpringContextShutdownHook] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2020-07-08 02:44:09.841  INFO 14854 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-07-08 02:44:09.843  INFO 14854 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2020-07-08 02:44:09.845  INFO 14854 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2020-07-08 02:44:14.855  INFO 14885 --- [main] c.c.c.ConfigServicePropertySourceLocator : Fetching config from server at : http://localhost:8888
+2020-07-08 02:44:14.963  INFO 14885 --- [main] c.c.c.ConfigServicePropertySourceLocator : Connect Timeout Exception on Url - http://localhost:8888. Will be trying the next url if available
+2020-07-08 02:44:14.964  WARN 14885 --- [main] c.c.c.ConfigServicePropertySourceLocator : Could not locate PropertySource: I/O error on GET request for "http://localhost:8888/graphql-example/default": Connection refused; nested exception is java.net.ConnectException: Connection refused
+2020-07-08 02:44:14.967  INFO 14885 --- [main] t.g.s.SpringBootGrapqlExampleApplication : No active profile set, falling back to default profiles: default
+2020-07-08 02:44:15.712  INFO 14885 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-07-08 02:44:15.812  INFO 14885 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 93ms. Found 1 JPA repository interfaces.
+2020-07-08 02:44:16.110  INFO 14885 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=bde9506b-3c5d-3a87-a607-5a1cd0294259
+2020-07-08 02:44:16.471  INFO 14885 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-07-08 02:44:16.774  INFO 14885 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8091 (http)
+2020-07-08 02:44:16.785  INFO 14885 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-07-08 02:44:16.785  INFO 14885 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.35]
+2020-07-08 02:44:16.873  INFO 14885 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-07-08 02:44:16.873  INFO 14885 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1889 ms
+2020-07-08 02:44:17.272  INFO 14885 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-07-08 02:44:17.331  INFO 14885 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-07-08 02:44:17.335  WARN 14885 --- [main] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=org.hsqldb.jdbcDriver was not found, trying direct instantiation.
+2020-07-08 02:44:17.582  INFO 14885 --- [main] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Driver does not support get/set network timeout for connections. (feature not supported)
+2020-07-08 02:44:17.584  INFO 14885 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-07-08 02:44:17.645  INFO 14885 --- [task-1] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-07-08 02:44:17.670  WARN 14885 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-07-08 02:44:17.700  INFO 14885 --- [task-1] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.15.Final
+2020-07-08 02:44:17.844  INFO 14885 --- [task-1] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-07-08 02:44:17.960  INFO 14885 --- [task-1] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.HSQLDialect
+2020-07-08 02:44:18.611  INFO 14885 --- [task-1] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-07-08 02:44:18.617  INFO 14885 --- [task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-07-08 02:44:18.825  INFO 14885 --- [main] c.t.g.s.aop.LoggingAdvice                : Method Invoked save in class class com.sun.proxy.$Proxy127 with args [com.techprimers.graphql.springbootgrapqlexample.model.Book@4f1afe8f]
+2020-07-08 02:44:18.904  INFO 14885 --- [main] c.t.g.s.aop.LoggingAdvice                : Method save return com.techprimers.graphql.springbootgrapqlexample.model.Book@130cfc47
+2020-07-08 02:44:18.905  INFO 14885 --- [main] c.t.g.s.aop.LoggingAdvice                : Method Invoked save in class class com.sun.proxy.$Proxy127 with args [com.techprimers.graphql.springbootgrapqlexample.model.Book@78d73b1b]
+2020-07-08 02:44:18.907  INFO 14885 --- [main] c.t.g.s.aop.LoggingAdvice                : Method save return com.techprimers.graphql.springbootgrapqlexample.model.Book@29d070c7
+2020-07-08 02:44:18.907  INFO 14885 --- [main] c.t.g.s.aop.LoggingAdvice                : Method Invoked save in class class com.sun.proxy.$Proxy127 with args [com.techprimers.graphql.springbootgrapqlexample.model.Book@696fad31]
+2020-07-08 02:44:18.910  INFO 14885 --- [main] c.t.g.s.aop.LoggingAdvice                : Method save return com.techprimers.graphql.springbootgrapqlexample.model.Book@6c4ce583
+2020-07-08 02:44:19.694  INFO 14885 --- [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: ffc45411-1cc6-4a1a-9545-e2c3fb76ab1c
+
+2020-07-08 02:44:19.817  INFO 14885 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1de85972, org.springframework.security.web.context.SecurityContextPersistenceFilter@dae5e0, org.springframework.security.web.header.HeaderWriterFilter@5db9f51f, org.springframework.security.web.authentication.logout.LogoutFilter@3feebf9c, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7ff09659, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@466fedfa, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@280ecc33, org.springframework.security.web.session.SessionManagementFilter@343db2f6, org.springframework.security.web.access.ExceptionTranslationFilter@cae2a97, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@3d8d52be]
+2020-07-08 02:44:19.925  INFO 14885 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2020-07-08 02:44:19.989  INFO 14885 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8091 (http) with context path ''
+2020-07-08 02:44:19.993  INFO 14885 --- [main] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
+2020-07-08 02:44:19.994  INFO 14885 --- [main] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+2020-07-08 02:44:20.010  INFO 14885 --- [main] t.g.s.SpringBootGrapqlExampleApplication : Started SpringBootGrapqlExampleApplication in 6.356 seconds (JVM running for 6.751)
+2020-07-08 02:44:22.521  INFO 14885 --- [http-nio-8091-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-07-08 02:44:22.521  INFO 14885 --- [http-nio-8091-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-07-08 02:44:22.534  INFO 14885 --- [http-nio-8091-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 13 ms
+2020-07-08 02:44:22.595  INFO 14885 --- [http-nio-8091-exec-1] c.t.g.s.aop.LoggingAdvice                : Method Invoked getAllBooks in class class com.techprimers.graphql.springbootgrapqlexample.resource.BookResource with args [{
+   orderedBooks (ordertest: title) {
+     isn
+     title
+     authors
+     publisher
+     publishedDate
+   }
+}]
+2020-07-08 02:44:22.599  INFO 14885 --- [http-nio-8091-exec-1] c.t.g.s.aop.LoggingAdvice                : Method Invoked getGraphQL in class class com.techprimers.graphql.springbootgrapqlexample.service.GraphQLService with args []
+2020-07-08 02:44:22.603  INFO 14885 --- [http-nio-8091-exec-1] c.t.g.s.aop.LoggingAdvice                : Method getGraphQL return graphql.GraphQL@14630bf6
+2020-07-08 02:44:22.624  WARN 14885 --- [http-nio-8091-exec-1] graphql.GraphQL                          : Query failed to validate : '{
+   orderedBooks (ordertest: title) {
+     isn
+     title
+     authors
+     publisher
+     publishedDate
+   }
+}'
+2020-07-08 02:44:22.626  INFO 14885 --- [http-nio-8091-exec-1] c.t.g.s.aop.LoggingAdvice                : Method getAllBooks return <200 OK OK,ExecutionResultImpl{data=null, errors=[ValidationError{validationErrorType=WrongType, queryPath=[orderedBooks], message=Validation error of type WrongType: argument 'ordertest' with value 'EnumValue{name='title'}' is not a valid 'String' @ 'orderedBooks', locations=[SourceLocation{line=2, column=18}], description='argument 'ordertest' with value 'EnumValue{name='title'}' is not a valid 'String''}], dataPresent=false, extensions=null},[]>
+2020-07-08 02:44:57.867  INFO 14885 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-07-08 02:44:57.867  INFO 14885 --- [SpringContextShutdownHook] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2020-07-08 02:44:57.870  INFO 14885 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-07-08 02:44:57.872  INFO 14885 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2020-07-08 02:44:57.875  INFO 14885 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2020-07-08 02:45:02.633  INFO 14901 --- [main] c.c.c.ConfigServicePropertySourceLocator : Fetching config from server at : http://localhost:8888
+2020-07-08 02:45:02.727  INFO 14901 --- [main] c.c.c.ConfigServicePropertySourceLocator : Connect Timeout Exception on Url - http://localhost:8888. Will be trying the next url if available
+2020-07-08 02:45:02.727  WARN 14901 --- [main] c.c.c.ConfigServicePropertySourceLocator : Could not locate PropertySource: I/O error on GET request for "http://localhost:8888/graphql-example/default": Connection refused; nested exception is java.net.ConnectException: Connection refused
+2020-07-08 02:45:02.732  INFO 14901 --- [main] t.g.s.SpringBootGrapqlExampleApplication : No active profile set, falling back to default profiles: default
+2020-07-08 02:45:03.461  INFO 14901 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-07-08 02:45:03.509  INFO 14901 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 41ms. Found 1 JPA repository interfaces.
+2020-07-08 02:45:03.696  INFO 14901 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=bde9506b-3c5d-3a87-a607-5a1cd0294259
+2020-07-08 02:45:03.959  INFO 14901 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-07-08 02:45:04.215  INFO 14901 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8091 (http)
+2020-07-08 02:45:04.225  INFO 14901 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-07-08 02:45:04.225  INFO 14901 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.35]
+2020-07-08 02:45:04.316  INFO 14901 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-07-08 02:45:04.317  INFO 14901 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1571 ms
+2020-07-08 02:45:04.652  INFO 14901 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-07-08 02:45:04.711  INFO 14901 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-07-08 02:45:04.714  WARN 14901 --- [main] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=org.hsqldb.jdbcDriver was not found, trying direct instantiation.
+2020-07-08 02:45:04.977  INFO 14901 --- [main] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Driver does not support get/set network timeout for connections. (feature not supported)
+2020-07-08 02:45:04.979  INFO 14901 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-07-08 02:45:05.045  INFO 14901 --- [task-1] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-07-08 02:45:05.065  WARN 14901 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-07-08 02:45:05.120  INFO 14901 --- [task-1] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.15.Final
+2020-07-08 02:45:05.270  INFO 14901 --- [task-1] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-07-08 02:45:05.380  INFO 14901 --- [task-1] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.HSQLDialect
+2020-07-08 02:45:05.986  INFO 14901 --- [task-1] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-07-08 02:45:05.993  INFO 14901 --- [task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-07-08 02:45:06.179  INFO 14901 --- [main] c.t.g.s.aop.LoggingAdvice                : Method Invoked save in class class com.sun.proxy.$Proxy127 with args [com.techprimers.graphql.springbootgrapqlexample.model.Book@2ca3d826]
+2020-07-08 02:45:06.251  INFO 14901 --- [main] c.t.g.s.aop.LoggingAdvice                : Method save return com.techprimers.graphql.springbootgrapqlexample.model.Book@586cc15d
+2020-07-08 02:45:06.251  INFO 14901 --- [main] c.t.g.s.aop.LoggingAdvice                : Method Invoked save in class class com.sun.proxy.$Proxy127 with args [com.techprimers.graphql.springbootgrapqlexample.model.Book@755b5f30]
+2020-07-08 02:45:06.253  INFO 14901 --- [main] c.t.g.s.aop.LoggingAdvice                : Method save return com.techprimers.graphql.springbootgrapqlexample.model.Book@3c18942
+2020-07-08 02:45:06.253  INFO 14901 --- [main] c.t.g.s.aop.LoggingAdvice                : Method Invoked save in class class com.sun.proxy.$Proxy127 with args [com.techprimers.graphql.springbootgrapqlexample.model.Book@78b03788]
+2020-07-08 02:45:06.255  INFO 14901 --- [main] c.t.g.s.aop.LoggingAdvice                : Method save return com.techprimers.graphql.springbootgrapqlexample.model.Book@430df350
+2020-07-08 02:45:06.931  INFO 14901 --- [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: cf17767c-3f35-48ef-be7f-7e2417c048f6
+
+2020-07-08 02:45:07.038  INFO 14901 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6181bc4a, org.springframework.security.web.context.SecurityContextPersistenceFilter@369ad7da, org.springframework.security.web.header.HeaderWriterFilter@2b1a901d, org.springframework.security.web.authentication.logout.LogoutFilter@6068ebb2, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3e98b933, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@55e42684, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@70485aa, org.springframework.security.web.session.SessionManagementFilter@5c0e2ec, org.springframework.security.web.access.ExceptionTranslationFilter@429e7914, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@6210666c]
+2020-07-08 02:45:07.136  INFO 14901 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2020-07-08 02:45:07.198  INFO 14901 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8091 (http) with context path ''
+2020-07-08 02:45:07.202  INFO 14901 --- [main] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
+2020-07-08 02:45:07.202  INFO 14901 --- [main] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+2020-07-08 02:45:07.216  INFO 14901 --- [main] t.g.s.SpringBootGrapqlExampleApplication : Started SpringBootGrapqlExampleApplication in 5.701 seconds (JVM running for 6.111)
+2020-07-08 02:45:10.761  INFO 14901 --- [http-nio-8091-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-07-08 02:45:10.761  INFO 14901 --- [http-nio-8091-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-07-08 02:45:10.772  INFO 14901 --- [http-nio-8091-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 11 ms
+2020-07-08 02:45:10.832  INFO 14901 --- [http-nio-8091-exec-2] c.t.g.s.aop.LoggingAdvice                : Method Invoked getAllBooks in class class com.techprimers.graphql.springbootgrapqlexample.resource.BookResource with args [{
+   orderedBooks (orderBy: "title") {
+     isn
+     title
+     authors
+     publisher
+     publishedDate
+   }
+}]
+2020-07-08 02:45:10.836  INFO 14901 --- [http-nio-8091-exec-2] c.t.g.s.aop.LoggingAdvice                : Method Invoked getGraphQL in class class com.techprimers.graphql.springbootgrapqlexample.service.GraphQLService with args []
+2020-07-08 02:45:10.839  INFO 14901 --- [http-nio-8091-exec-2] c.t.g.s.aop.LoggingAdvice                : Method getGraphQL return graphql.GraphQL@7f917013
+2020-07-08 02:45:10.877  INFO 14901 --- [http-nio-8091-exec-2] c.t.g.s.aop.LoggingAdvice                : Method Invoked getAllBooks in class class com.techprimers.graphql.springbootgrapqlexample.service.CacheService with args []
+2020-07-08 02:45:10.882  INFO 14901 --- [http-nio-8091-exec-2] c.t.g.s.service.CacheService             : >> all >> cache stats CacheStats{hitCount=0, missCount=0, loadSuccessCount=0, loadExceptionCount=0, totalLoadTime=0, evictionCount=0}
+2020-07-08 02:45:11.048  INFO 14901 --- [http-nio-8091-exec-2] c.t.g.s.aop.LoggingAdvice                : Method getAllBooks return [com.techprimers.graphql.springbootgrapqlexample.model.Book@6405816a, com.techprimers.graphql.springbootgrapqlexample.model.Book@459a13a1, com.techprimers.graphql.springbootgrapqlexample.model.Book@ddcc4a9]
+2020-07-08 02:45:11.066  INFO 14901 --- [http-nio-8091-exec-2] c.t.g.s.aop.LoggingAdvice                : Method getAllBooks return <200 OK OK,ExecutionResultImpl{data={orderedBooks=[{isn=123, title=Book of Clouds, authors=[Chloe Aridjis], publisher=Kindle Edition, publishedDate=Nov 2017}, {isn=124, title=Cloud Arch & Engineering, authors=[Peter, Sam], publisher=Orielly, publishedDate=Jan 2015}, {isn=125, title=Java 9 Programming, authors=[Venkat, Ram], publisher=Orielly, publishedDate=Dec 2016}]}, errors=[], dataPresent=true, extensions=null},[]>
+2020-07-08 02:49:08.256  INFO 14901 --- [http-nio-8091-exec-5] c.t.g.s.aop.LoggingAdvice                : Method Invoked getAllBooks in class class com.techprimers.graphql.springbootgrapqlexample.resource.BookResource with args [{
+   orderedBooks (orderBy: { field: title, direction: ASC }) {
+     isn
+     title
+     authors
+     publisher
+     publishedDate
+   }
+}]
+2020-07-08 02:49:08.256  INFO 14901 --- [http-nio-8091-exec-5] c.t.g.s.aop.LoggingAdvice                : Method Invoked getGraphQL in class class com.techprimers.graphql.springbootgrapqlexample.service.GraphQLService with args []
+2020-07-08 02:49:08.257  INFO 14901 --- [http-nio-8091-exec-5] c.t.g.s.aop.LoggingAdvice                : Method getGraphQL return graphql.GraphQL@7f917013
+2020-07-08 02:49:08.262  WARN 14901 --- [http-nio-8091-exec-5] graphql.GraphQL                          : Query failed to validate : '{
+   orderedBooks (orderBy: { field: title, direction: ASC }) {
+     isn
+     title
+     authors
+     publisher
+     publishedDate
+   }
+}'
+2020-07-08 02:49:08.262  INFO 14901 --- [http-nio-8091-exec-5] c.t.g.s.aop.LoggingAdvice                : Method getAllBooks return <200 OK OK,ExecutionResultImpl{data=null, errors=[ValidationError{validationErrorType=WrongType, queryPath=[orderedBooks], message=Validation error of type WrongType: argument 'orderBy' with value 'ObjectValue{objectFields=[ObjectField{name='field', value=EnumValue{name='title'}}, ObjectField{name='direction', value=EnumValue{name='ASC'}}]}' is not a valid 'String' @ 'orderedBooks', locations=[SourceLocation{line=2, column=18}], description='argument 'orderBy' with value 'ObjectValue{objectFields=[ObjectField{name='field', value=EnumValue{name='title'}}, ObjectField{name='direction', value=EnumValue{name='ASC'}}]}' is not a valid 'String''}], dataPresent=false, extensions=null},[]>
+2020-07-08 02:49:17.804  INFO 14901 --- [http-nio-8091-exec-6] c.t.g.s.aop.LoggingAdvice                : Method Invoked getAllBooks in class class com.techprimers.graphql.springbootgrapqlexample.resource.BookResource with args [{
+   allbooks (orderBy: { field: title, direction: ASC }) {
+     isn
+     title
+     authors
+     publisher
+     publishedDate
+   }
+}]
+2020-07-08 02:49:17.805  INFO 14901 --- [http-nio-8091-exec-6] c.t.g.s.aop.LoggingAdvice                : Method Invoked getGraphQL in class class com.techprimers.graphql.springbootgrapqlexample.service.GraphQLService with args []
+2020-07-08 02:49:17.805  INFO 14901 --- [http-nio-8091-exec-6] c.t.g.s.aop.LoggingAdvice                : Method getGraphQL return graphql.GraphQL@7f917013
+2020-07-08 02:49:17.807  WARN 14901 --- [http-nio-8091-exec-6] graphql.GraphQL                          : Query failed to validate : '{
+   allbooks (orderBy: { field: title, direction: ASC }) {
+     isn
+     title
+     authors
+     publisher
+     publishedDate
+   }
+}'
+2020-07-08 02:49:17.808  INFO 14901 --- [http-nio-8091-exec-6] c.t.g.s.aop.LoggingAdvice                : Method getAllBooks return <200 OK OK,ExecutionResultImpl{data=null, errors=[ValidationError{validationErrorType=FieldUndefined, queryPath=[allbooks], message=Validation error of type FieldUndefined: Field 'allbooks' in type 'Query' is undefined @ 'allbooks', locations=[SourceLocation{line=2, column=4}], description='Field 'allbooks' in type 'Query' is undefined'}], dataPresent=false, extensions=null},[]>
