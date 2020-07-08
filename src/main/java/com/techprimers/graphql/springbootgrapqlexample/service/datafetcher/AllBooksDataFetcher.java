@@ -1,7 +1,7 @@
 package com.techprimers.graphql.springbootgrapqlexample.service.datafetcher;
 
 import com.techprimers.graphql.springbootgrapqlexample.model.Book;
-import com.techprimers.graphql.springbootgrapqlexample.service.BookService;
+import com.techprimers.graphql.springbootgrapqlexample.repository.BookRepositoryImpl;
 import graphql.schema.DataFetcher;
 import graphql.schema.DataFetchingEnvironment;
 import lombok.extern.slf4j.Slf4j;
@@ -15,10 +15,10 @@ import java.util.List;
 public class AllBooksDataFetcher implements DataFetcher<List<Book>> {
 
     @Autowired
-    BookService bookService;
+    BookRepositoryImpl bookRepositoryImpl;
 
     @Override
     public List<Book> get(DataFetchingEnvironment dataFetchingEnvironment) {
-        return bookService.getAllBooks();
+        return bookRepositoryImpl.getAllBooks();
     }
 }

@@ -1,42 +1,29 @@
 package com.techprimers.graphql.springbootgrapqlexample.service;
 
 import com.techprimers.graphql.springbootgrapqlexample.model.Book;
-import com.techprimers.graphql.springbootgrapqlexample.repository.BookRepository;
 import lombok.AllArgsConstructor;
-import lombok.extern.slf4j.Slf4j;
-import org.springframework.cache.annotation.CacheEvict;
-import org.springframework.cache.annotation.Cacheable;
-import org.springframework.scheduling.annotation.Scheduled;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import java.time.LocalDateTime;
-
+import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
 
-@Slf4j
 @Service
 @AllArgsConstructor
 public class BookService {
 
-    private BookRepository bookRepository;
+    private GraphQLService graphQLService;
 
-    @Cacheable("byISN")
-    public Book getBookByIsn(String isn){
-        return bookRepository.findById(isn).get();
-    }
+    public List<Book> getBooks(String query){
+        HashMap<String, List<Book>> hp = graphQLService.getGraphQL().execute(query).getData();
 
-    public void saveBook(Book book){
-        bookRepository.save(book);
-    }
+        for (Object value : hp.values()) {
+            if(value instanceof List){
+                return (List<Book>) value;
+            }
+        }
 
-    @Cacheable("books")
-    public List<Book> getAllBooks(){
-        return bookRepository.findAll();
-    }
-
-    @CacheEvict(value = {"books","byISN"}, allEntries = true)
-    @Scheduled(cron = "0 0 0 ? * *")
-    public void deleteCacheEntries(){
-        log.info(">>> Deleting Cache @ {}", LocalDateTime.now());
+        return new ArrayList<>();
     }
 }

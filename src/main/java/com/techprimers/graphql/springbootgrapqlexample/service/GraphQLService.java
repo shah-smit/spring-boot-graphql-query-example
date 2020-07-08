@@ -9,7 +9,7 @@ import graphql.schema.idl.RuntimeWiring;
 import graphql.schema.idl.SchemaGenerator;
 import graphql.schema.idl.SchemaParser;
 import graphql.schema.idl.TypeDefinitionRegistry;
-import org.springframework.beans.factory.annotation.Autowired;
+import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.core.io.Resource;
 import org.springframework.stereotype.Service;
@@ -17,23 +17,19 @@ import org.springframework.stereotype.Service;
 import javax.annotation.PostConstruct;
 import java.io.*;
 import java.nio.charset.StandardCharsets;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
 @Service
+@RequiredArgsConstructor
 public class GraphQLService {
 
-    @Autowired
-    BookRepository bookRepository;
+    private final BookRepository bookRepository;
 
-    @Autowired
-    private AllBooksDataFetcher allBooksDataFetcher;
+    private final AllBooksDataFetcher allBooksDataFetcher;
 
     @Value("classpath:books.graphql")
-    Resource resource;
+    private Resource resource;
 
     private GraphQL graphQL;
 
@@ -84,19 +80,7 @@ public class GraphQLService {
     }
 
 
-    private GraphQL getGraphQL() {
+    public GraphQL getGraphQL() {
         return graphQL;
-    }
-
-    public List<Book> getBooks(String query){
-        HashMap<String, List<Book>> hp = getGraphQL().execute(query).getData();
-
-        for (Object value : hp.values()) {
-            if(value instanceof List){
-                return (List<Book>) value;
-            }
-        }
-
-        return new ArrayList<>();
     }
 }
