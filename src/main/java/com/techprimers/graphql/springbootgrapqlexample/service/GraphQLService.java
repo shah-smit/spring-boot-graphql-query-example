@@ -2,11 +2,8 @@ package com.techprimers.graphql.springbootgrapqlexample.service;
 
 import com.techprimers.graphql.springbootgrapqlexample.model.Book;
 import com.techprimers.graphql.springbootgrapqlexample.repository.BookRepository;
-import com.techprimers.graphql.springbootgrapqlexample.service.datafetcher.AddBookFetcher;
 import com.techprimers.graphql.springbootgrapqlexample.service.datafetcher.AllBooksDataFetcher;
-import com.techprimers.graphql.springbootgrapqlexample.service.datafetcher.BookDataFetcher;
 import graphql.GraphQL;
-import graphql.schema.DataFetcher;
 import graphql.schema.GraphQLSchema;
 import graphql.schema.idl.RuntimeWiring;
 import graphql.schema.idl.SchemaGenerator;
@@ -20,6 +17,9 @@ import org.springframework.stereotype.Service;
 import javax.annotation.PostConstruct;
 import java.io.*;
 import java.nio.charset.StandardCharsets;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
@@ -29,16 +29,13 @@ public class GraphQLService {
     @Autowired
     BookRepository bookRepository;
 
+    @Autowired
+    private AllBooksDataFetcher allBooksDataFetcher;
+
     @Value("classpath:books.graphql")
     Resource resource;
 
     private GraphQL graphQL;
-    @Autowired
-    private AllBooksDataFetcher allBooksDataFetcher;
-    @Autowired
-    private BookDataFetcher bookDataFetcher;
-    @Autowired
-    private AddBookFetcher addBookFetcher;
 
     // load schema at application start up
     @PostConstruct
@@ -82,15 +79,24 @@ public class GraphQLService {
     private RuntimeWiring buildRuntimeWiring() {
         return RuntimeWiring.newRuntimeWiring()
                 .type("Query", typeWiring -> typeWiring
-                        .dataFetcher("allBooks", allBooksDataFetcher)
-                        .dataFetcher("book", bookDataFetcher))
-                .type("Mutation", typeWiring -> typeWiring
-                        .dataFetcher("newBook", addBookFetcher))
+                        .dataFetcher("allBooks", allBooksDataFetcher))
                 .build();
     }
 
 
-    public GraphQL getGraphQL() {
+    private GraphQL getGraphQL() {
         return graphQL;
+    }
+
+    public List<Book> getBooks(String query){
+        HashMap<String, List<Book>> hp = getGraphQL().execute(query).getData();
+
+        for (Object value : hp.values()) {
+            if(value instanceof List){
+                return (List<Book>) value;
+            }
+        }
+
+        return new ArrayList<>();
     }
 }
